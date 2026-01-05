@@ -58,7 +58,7 @@ app.get('/api/secure', authenticateToken, (req, res) => {
 
 // Admin Route
 app.get('/admin', authenticateToken, authorizeAdmin, (req, res) => {
-    res.send(`<h1>Admin Panel</h1><p>Welcome, Admin!</p><p><b>Flag:</b> ${FLAG}</p>`);
+    res.send(`<h1>Admin Panel</h1><p>Welcome to School, Admin!</p><p><b>Flag:</b> ${FLAG}</p>`);
 });
 
 app.listen(PORT, () => {
